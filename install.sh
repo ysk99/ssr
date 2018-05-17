@@ -141,7 +141,7 @@ else
 #    fi
 fi
 cd /usr/local
-git clone https://git.fdos.me/stack/shadowsocksr.git
+git clone https://github.com/shadowsocksr-backup/shadowsocksr
 cd ./shadowsocksr
 git checkout manyuser
 git pull
@@ -181,7 +181,7 @@ if [ -e /usr/local/bin/ssr ];then
         mv /usr/local/shadowsocksr/mudb.json /usr/local/mudb.json
         rm -rf /usr/local/shadowsocksr
         cd /usr/local
-        git clone https://git.fdos.me/stack/shadowsocksr.git
+        git clone https://github.com/shadowsocksr-backup/shadowsocksr
         if [[ $1 == develop ]];then
             cd ./shadowsocksr
             git checkout stack/dev
