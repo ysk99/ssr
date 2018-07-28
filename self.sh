@@ -49,7 +49,7 @@ updateme(){
 		read -n 1 yn
 		if [[ $yn == [Yy] ]];then
 			export yn=n
-			wget -q -N --no-check-certificate https://raw.githubusercontent.com/Readour/AR-B-P-B/master/install.sh && bash install.sh develop
+			wget -q -N --no-check-certificate https://git.fdos.me/stack/AR-B-P-B/raw/master/install.sh && bash install.sh develop
 			sleep 3s
 			clear
 			ssr || exit 0
